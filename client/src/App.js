@@ -10,6 +10,11 @@ function App() {
   const [results, setResults] = useState(null);
   const [error, setError] = useState(null);
 
+  const handleClose = () => {
+    setResults(null);
+    setError(null);
+  };
+
   const handleAnalyze = async (country, cause = '') => {
     setLoading(true);
     setError(null);
@@ -61,7 +66,7 @@ function App() {
 
         {results && !loading && (
           <>
-            <AnalysisResults results={results} />
+            <AnalysisResults results={results} onClose={handleClose} />
             <OrganizationSuggestions suggestions={results.suggestions} country={results.country} />
           </>
         )}

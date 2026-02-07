@@ -1,0 +1,171 @@
+{
+  "country": "Pakistan",
+  "overall_score": 48,
+  "analysis_date": "2026-02-07",
+  "geopolitical": {
+    "score": 38,
+    "sub_topics": {
+      "external_politics": [
+        {
+          "headline": "Pakistan, Jordan move toward PTA and wider economic ties",
+          "brief_summary": "Talks cover preferential trade and cooperation across multiple sectors. :cite[trb,arn]"
+        },
+        {
+          "headline": "Pakistan signals stronger ties with Iran after blast",
+          "brief_summary": "Islamabad reiterates commitment to deepen relations with Tehran. :cite[dtm]"
+        }
+      ],
+      "regional_conflicts": [
+        {
+          "headline": "IS claims Islamabad imambargah bombing",
+          "brief_summary": "At least 31 killed and 170+ injured; fears of further urban attacks. :cite[rtr]"
+        },
+        {
+          "headline": "India rejects allegations of involvement",
+          "brief_summary": "New Delhi condemns attack, calls claims baseless. :cite[usn]"
+        },
+        {
+          "headline": "Cross-border militancy spotlighted",
+          "brief_summary": "Analysts warn of sectarian risk and Afghan-linked networks. :cite[alj]"
+        }
+      ]
+    }
+  },
+  "economy": {
+    "score": 52,
+    "sub_topics": {
+      "markets": [
+        {
+          "headline": "PSX down nearly 2% on heavy selling",
+          "brief_summary": "Risk-off trading hits index heavyweights. :cite[brc]"
+        },
+        {
+          "headline": "Gold price per tola drops sharply",
+          "brief_summary": "Local bullion tracks steep global decline. :cite[brc]"
+        }
+      ],
+      "investment": [
+        {
+          "headline": "US EXIM okays $1.3bn for Reko Diq",
+          "brief_summary": "Financing supports critical minerals supply chains. :cite[brc]"
+        }
+      ],
+      "remittances_and_macro": [
+        {
+          "headline": "SBP ups FY26 remittance projection to $42bn",
+          "brief_summary": "Seasonal Eid inflows and payments integration cited. :cite[brc]"
+        },
+        {
+          "headline": "Gallup: Public optimism improved vs 2024",
+          "brief_summary": "Living standards and economic sentiment tick up. :cite[brc]"
+        }
+      ]
+    }
+  },
+  "social": {
+    "score": 48,
+    "sub_topics": {
+      "education": [
+        {
+          "headline": "Punjab begins college privatisation",
+          "brief_summary": "71 associate colleges to be transferred by March. :cite[trb]"
+        }
+      ],
+      "civil_liberties": [
+        {
+          "headline": "Imaan Mazari appeals 17-year conviction",
+          "brief_summary": "Petition challenges verdict over social media posts. :cite[trb]"
+        },
+        {
+          "headline": "ATC denies Imran Khan personal doctors",
+          "brief_summary": "Court cites jail rules for ongoing treatment. :cite[trb]"
+        }
+      ],
+      "minority_rights": [
+        {
+          "headline": "Pakistan showcases interfaith dialogue in DC",
+          "brief_summary": "Meetings stress inclusion and youth resilience. :cite[trb]"
+        }
+      ],
+      "culture": [
+        {
+          "headline": "Basant revival under strict safety rules",
+          "brief_summary": "QR-coded kites, string bans, penalties announced. :cite[trb]"
+        }
+      ]
+    }
+  },
+  "ecological": {
+    "score": 62,
+    "sub_topics": {
+      "climate_policy": [
+        {
+          "headline": "Govt seeks pro-climate FY27 budget proposals",
+          "brief_summary": "Trade pressures, climate finance steer policy design. :cite[brc]"
+        }
+      ],
+      "weather_advisories": [
+        {
+          "headline": "NDMA warns of isolated rain/snow north",
+          "brief_summary": "Cold/dry elsewhere per Feb 5–10 advisory. :cite[ndm]"
+        },
+        {
+          "headline": "PMD: Karachi to see stronger sea breeze",
+          "brief_summary": "Dry days and slight temperature uptick expected. :cite[trb]"
+        }
+      ],
+      "urban_environment": [
+        {
+          "headline": "PMD: Pleasant Basant weather for Lahore",
+          "brief_summary": "Dry, partly cloudy; PDMA shares safety guidance. :cite[trb]"
+        },
+        {
+          "headline": "Cold, dry conditions nationwide",
+          "brief_summary": "Major-city temperatures remain low in mornings. :cite[rpk]"
+        }
+      ]
+    }
+  },
+  "humanitarian": {
+    "score": 40,
+    "sub_topics": {
+      "health": [
+        {
+          "headline": "Nationwide polio drive underway",
+          "brief_summary": "Millions of children targeted with security for teams. :cite[dwn]"
+        }
+      ],
+      "conflict": [
+        {
+          "headline": "Islamabad blast death toll climbs; funerals held",
+          "brief_summary": "Hospitals report rising casualties; security pledges. :cite[dwn]"
+        },
+        {
+          "headline": "Arrests of suspected facilitators in KP raids",
+          "brief_summary": "One police officer martyred during operations. :cite[dwn]"
+        }
+      ]
+    }
+  },
+  "fun_facts": {
+    "score": null,
+    "sub_topics": {
+      "cultural": [
+        {
+          "headline": "Basant returns to Lahore",
+          "brief_summary": "Rooftop kite-flying and illuminated streets. :cite[dwn,trb]"
+        },
+        {
+          "headline": "Good festival weather forecast",
+          "brief_summary": "PMD predicts dry, pleasant conditions. :cite[trb]"
+        }
+      ],
+      "positive_news": [
+        {
+          "headline": "Pakistan wins T20 World Cup opener",
+          "brief_summary": "Three-wicket thriller delights fans. :cite[brc]"
+        }
+      ]
+    }
+  }
+}
