@@ -39,9 +39,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="header-content">
-          <h1>🌍 Country Impact Analyst</h1>
+          <h1>Country Impact Analyst</h1>
           <p className="subtitle">
-            AI-powered humanitarian impact assessment and geopolitical risk evaluation
+            AI-Powered Humanitarian Impact Assessment & Geopolitical Risk Evaluation
           </p>
         </div>
       </header>
@@ -51,7 +51,7 @@ function App() {
         
         {error && (
           <div className="error-message">
-            <span className="error-icon">⚠️</span>
+            <span className="error-icon">!</span>
             {error}
           </div>
         )}
@@ -59,7 +59,7 @@ function App() {
         {loading && (
           <div className="loading-container">
             <div className="spinner"></div>
-            <p>🌐 Browsing the web for recent news and analyzing...</p>
+            <p>Browsing the web for recent news and analyzing data...</p>
             <p className="loading-subtext">Searching news from the last 3 days • This may take 30-60 seconds</p>
           </div>
         )}

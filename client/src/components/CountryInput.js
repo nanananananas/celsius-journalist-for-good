@@ -15,7 +15,7 @@ const CountryInput = ({ onAnalyze, loading }) => {
   return (
     <div className="country-input-container">
       <div className="input-card">
-        <h2>🔍 Analyze a Country</h2>
+        <h2>Analyze a Country</h2>
         <p className="input-description">
           Enter a country name to receive a comprehensive humanitarian impact assessment
           based on the latest news and developments from the last 3 days.
@@ -43,7 +43,7 @@ const CountryInput = ({ onAnalyze, loading }) => {
           
           <div className="cause-wrapper">
             <label htmlFor="cause-input" className="cause-label">
-              🎯 Optional: Specific Cause or Issue
+              Optional: Specific Cause or Issue
             </label>
             <input
               id="cause-input"

@@ -1,370 +1,418 @@
-/* Modern Analysis Results Styling */
+/* NYT/Daily Mail Inspired Professional Design */
 
-.analysis-results-modern {
-  background: #f5f7fa;
-  border-radius: 16px;
-  padding: 0;
-  margin: 2rem 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+.nyt-analysis-container {
+  max-width: 1200px;
+  margin: 3rem auto;
+  background: #fafafa;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   animation: fadeIn 0.4s ease-out;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Header */
-.modern-header {
+.nyt-header {
+  background: linear-gradient(135deg, #1a365d 0%, #2d4a6f 100%);
+  padding: 2rem 3rem;
+  border-bottom: 4px solid #3b5998;
+}
+
+.nyt-header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
-  background: white;
-  border-radius: 16px 16px 0 0;
-  border-bottom: 1px solid #e5e7eb;
 }
 
-.header-left {
+.nyt-country-section {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
-.country-flag {
+.nyt-country-flag {
+  width: 56px;
+  height: 42px;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nyt-country-name {
+  font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 2.5rem;
-  line-height: 1;
-}
-
-.country-name {
-  font-size: 1.8rem;
   font-weight: 700;
-  color: #1e3c72;
+  color: #f9f9f9;
   margin: 0;
+  letter-spacing: -0.5px;
 }
 
-.close-button {
-  background: none;
-  border: none;
-  font-size: 1.8rem;
-  color: #9ca3af;
+.nyt-close-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #f9f9f9;
+  padding: 0.75rem;
   cursor: pointer;
-  padding: 0.5rem;
-  line-height: 1;
-  transition: color 0.2s ease;
-}
-
-.close-button:hover {
-  color: #ef4444;
-}
-
-/* Top Stats */
-.top-stats {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  padding: 1.5rem 2rem;
-  background: white;
-}
-
-.stat-card {
+  border-radius: 4px;
+  transition: all 0.2s ease;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 1.25rem;
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
+  justify-content: center;
 }
 
-.stat-icon {
+.nyt-close-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Metrics Bar */
+.nyt-metrics-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #f5f5f5;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.nyt-metric {
+  padding: 1.75rem 2rem;
+  text-align: center;
+  border-right: 1px solid #d4d4d4;
+}
+
+.nyt-metric:last-child {
+  border-right: none;
+}
+
+.nyt-metric-primary {
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f1f3 100%);
+}
+
+.nyt-metric-label {
+  display: block;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.nyt-metric-value {
+  display: block;
+  font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 1.5rem;
-}
-
-.stat-content {
-  flex: 1;
-}
-
-.stat-label {
-  font-size: 0.9rem;
-  color: #6b7280;
-  margin-bottom: 0.25rem;
-}
-
-.stat-value {
-  font-size: 1.8rem;
   font-weight: 700;
-  color: #1e3c72;
+  color: #1a1a1a;
 }
 
-/* Risk Tracker */
-.risk-tracker-section {
-  padding: 1.5rem 2rem;
-  background: white;
-  border-top: 1px solid #f3f4f6;
+.nyt-score-large {
+  font-size: 2.5rem;
 }
 
-.risk-tracker-header {
+/* Risk Assessment */
+.nyt-risk-section {
+  padding: 2rem 3rem;
+  background: #fdfdfd;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nyt-risk-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
-.risk-tracker-label {
-  font-size: 0.95rem;
-  color: #6b7280;
-  font-weight: 500;
-}
-
-.risk-tracker-score {
-  font-size: 1.1rem;
+.nyt-section-title {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: #1e3c72;
+  color: #2d2d2d;
+  margin: 0;
+  letter-spacing: -0.3px;
 }
 
-.risk-tracker-bar {
-  height: 12px;
-  background: linear-gradient(
-    to right,
-    #10b981 0%,
-    #84cc16 20%,
-    #fbbf24 40%,
-    #fb923c 60%,
-    #f97316 80%,
-    #ef4444 100%
-  );
-  border-radius: 6px;
+.nyt-risk-score {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a365d;
+}
+
+.nyt-risk-bar {
+  height: 16px;
+  background: #e8e8e8;
+  border-radius: 2px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 0.5rem;
 }
 
-.risk-tracker-fill {
+.nyt-risk-fill {
   height: 100%;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 6px;
-  transition: width 0.6s ease-out;
   position: relative;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.risk-tracker-fill::after {
-  content: '';
+.nyt-risk-marker {
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
-  width: 3px;
-  background: white;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  width: 2px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Weather Analogy */
-.weather-analogy-modern {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 2rem;
-  background: linear-gradient(135deg, #667eea22 0%, #764ba222 100%);
-  border-top: 1px solid #f3f4f6;
-  border-bottom: 1px solid #f3f4f6;
-}
-
-.weather-icon-large {
-  font-size: 2rem;
-}
-
-.weather-text-modern {
-  font-size: 1rem;
-  color: #374151;
-  font-style: italic;
-  font-weight: 500;
-}
-
-/* Category Scores */
-.category-scores-section {
-  padding: 1.5rem 2rem;
-  background: white;
-}
-
-.section-title {
-  font-size: 1rem;
-  color: #9ca3af;
-  font-weight: 500;
-  margin: 0 0 1.25rem 0;
-  text-transform: capitalize;
-}
-
-.category-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-
-.category-card {
+.nyt-risk-labels {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1.25rem 1.5rem;
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  transition: all 0.2s ease;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.7rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.category-card:hover {
-  background: #f3f4f6;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+/* Context Box */
+.nyt-context-box {
+  padding: 1.5rem 3rem;
+  background: linear-gradient(135deg, #f0f4f8 0%, #e6eef5 100%);
+  border-left: 4px solid #3b5998;
+  border-bottom: 1px solid #d4d4d4;
 }
 
-.category-name {
+.nyt-context-title {
+  font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 1rem;
-  color: #374151;
-  font-weight: 500;
-}
-
-.category-score {
-  font-size: 1.3rem;
   font-weight: 700;
-  color: #1e3c72;
+  color: #1a365d;
+  margin: 0 0 0.75rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
 }
 
-/* Latest Highlights */
-.highlights-section {
-  padding: 1.5rem 2rem;
-  background: white;
-  border-top: 1px solid #f3f4f6;
+.nyt-context-text {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #2d2d2d;
+  margin: 0;
+  font-style: italic;
 }
 
-.highlights-list {
+/* Dimensions Section */
+.nyt-dimensions-section {
+  padding: 2.5rem 3rem;
+  background: #fdfdfd;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nyt-dimensions-section .nyt-section-title {
+  margin-bottom: 1.5rem;
+}
+
+.nyt-dimensions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.nyt-dimension-card {
+  background: #f8f8f8;
+  border: 1px solid #d4d4d4;
+  padding: 1.75rem 1.5rem;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.nyt-dimension-card:hover {
+  background: #f0f0f0;
+  border-color: #3b5998;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.nyt-dimension-name {
+  font-family: 'Arial', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 1rem 0;
+}
+
+.nyt-dimension-score {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.nyt-dimension-neutral {
+  opacity: 0.6;
+}
+
+.nyt-dimension-na {
+  color: #999 !important;
+  font-size: 1.5rem !important;
+}
+
+/* Highlights Section */
+.nyt-highlights-section {
+  padding: 2.5rem 3rem;
+  background: #fdfdfd;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nyt-highlights-section .nyt-section-title {
+  margin-bottom: 1.5rem;
+}
+
+.nyt-highlights-list {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
-.highlight-item {
-  padding: 1.25rem;
-  background: #f9fafb;
-  border-left: 3px solid #667eea;
-  border-radius: 8px;
+.nyt-highlight-item {
+  padding: 1.5rem;
+  background: #f8f8f8;
+  border-left: 3px solid #3b5998;
   transition: all 0.2s ease;
 }
 
-.highlight-item:hover {
-  background: #f3f4f6;
-  border-left-color: #764ba2;
+.nyt-highlight-item:hover {
+  background: #f0f0f0;
+  border-left-color: #1a365d;
   transform: translateX(4px);
 }
 
-.highlight-headline {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #1e3c72;
+.nyt-highlight-headline {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a1a;
   margin: 0 0 0.5rem 0;
   line-height: 1.4;
 }
 
-.highlight-summary {
-  font-size: 0.9rem;
-  color: #6b7280;
-  margin: 0;
+.nyt-highlight-summary {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 0.95rem;
   line-height: 1.6;
+  color: #4a4a4a;
+  margin: 0;
 }
 
-/* Actions Section */
-.actions-section {
-  padding: 1.5rem 2rem;
-  background: white;
-  border-top: 1px solid #f3f4f6;
+/* Analysis Toggle */
+.nyt-analysis-toggle {
+  padding: 2rem 3rem;
+  background: #f5f5f5;
+  border-bottom: 1px solid #d4d4d4;
 }
 
-.full-analysis-btn {
+.nyt-toggle-btn {
   width: 100%;
-  padding: 1rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  background: #fdfdfd;
+  border: 2px solid #d4d4d4;
+  color: #1a365d;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
 }
 
-.full-analysis-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(118, 75, 162, 0.3);
+.nyt-toggle-btn:hover {
+  background: #f0f0f0;
+  border-color: #3b5998;
 }
 
-.full-analysis-btn:active {
-  transform: translateY(0);
+/* Full Analysis */
+.nyt-full-analysis {
+  border-top: 4px solid #3b5998;
 }
 
-/* Full Analysis Section */
-.full-analysis-section {
-  padding: 2rem;
-  background: white;
-  border-top: 2px solid #e5e7eb;
-  border-radius: 0 0 16px 16px;
+.nyt-narrative-section,
+.nyt-data-section {
+  padding: 2.5rem 3rem;
+  background: #fdfdfd;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-.narrative-section-modern {
+.nyt-narrative-section .nyt-section-title,
+.nyt-data-section .nyt-section-title {
   margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e0e0e0;
 }
 
-.narrative-section-modern h3,
-.json-section-modern h3 {
-  font-size: 1.4rem;
-  color: #1e3c72;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #e5e7eb;
-  padding-bottom: 0.5rem;
-}
-
-.narrative-section-modern h1,
-.narrative-section-modern h2,
-.narrative-section-modern h3,
-.narrative-section-modern h4 {
-  color: #1e3c72;
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-}
-
-.narrative-section-modern p {
-  color: #374151;
+.nyt-narrative-content {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.05rem;
   line-height: 1.8;
+  color: #2d2d2d;
+}
+
+.nyt-narrative-content h1,
+.nyt-narrative-content h2,
+.nyt-narrative-content h3 {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: #1a1a1a;
+  margin: 2rem 0 1rem 0;
+  font-weight: 700;
+}
+
+.nyt-narrative-content h1 {
+  font-size: 2rem;
+  border-bottom: 2px solid #d4d4d4;
+  padding-bottom: 0.75rem;
+}
+
+.nyt-narrative-content h2 {
+  font-size: 1.6rem;
+}
+
+.nyt-narrative-content h3 {
+  font-size: 1.3rem;
+}
+
+.nyt-narrative-content p {
+  margin: 1.25rem 0;
+}
+
+.nyt-narrative-content ul {
+  padding-left: 2rem;
   margin: 1rem 0;
 }
 
-.narrative-section-modern ul {
-  padding-left: 1.5rem;
-  margin: 1rem 0;
+.nyt-narrative-content li {
+  margin: 0.75rem 0;
 }
 
-.narrative-section-modern li {
-  color: #374151;
-  margin: 0.5rem 0;
-  line-height: 1.6;
+.nyt-narrative-content strong {
+  color: #1a365d;
+  font-weight: 700;
 }
 
-.narrative-section-modern strong {
-  color: #2a5298;
-}
-
-.json-section-modern {
-  background: #1e293b;
-  padding: 1.5rem;
-  border-radius: 12px;
+.nyt-json-viewer {
+  background: #2d2d2d;
+  padding: 2rem;
+  border-radius: 2px;
   overflow-x: auto;
+  border: 1px solid #1a1a1a;
 }
 
-.json-section-modern h3 {
-  color: white;
-  border-bottom-color: #334155;
-}
-
-.json-section-modern pre {
-  color: #e2e8f0;
-  font-family: 'Courier New', monospace;
-  font-size: 0.9rem;
+.nyt-json-viewer pre {
+  color: #e0e0e0;
+  font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+  font-size: 0.85rem;
   line-height: 1.6;
   margin: 0;
   white-space: pre-wrap;
@@ -372,50 +420,55 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .nyt-dimensions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
-  .analysis-results-modern {
-    margin: 1rem 0;
-    border-radius: 12px;
+  .nyt-header {
+    padding: 1.5rem 1.5rem;
   }
 
-  .modern-header {
-    padding: 1rem 1.5rem;
+  .nyt-country-flag {
+    width: 48px;
+    height: 36px;
   }
 
-  .country-flag {
+  .nyt-country-name {
+    font-size: 1.75rem;
+  }
+
+  .nyt-metrics-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .nyt-metric {
+    border-right: none;
+    border-bottom: 1px solid #d4d4d4;
+  }
+
+  .nyt-metric:last-child {
+    border-bottom: none;
+  }
+
+  .nyt-risk-section,
+  .nyt-context-box,
+  .nyt-dimensions-section,
+  .nyt-highlights-section,
+  .nyt-analysis-toggle,
+  .nyt-narrative-section,
+  .nyt-data-section {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .nyt-dimensions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nyt-dimension-score {
     font-size: 2rem;
-  }
-
-  .country-name {
-    font-size: 1.4rem;
-  }
-
-  .top-stats {
-    grid-template-columns: 1fr;
-    padding: 1rem 1.5rem;
-  }
-
-  .stat-card {
-    padding: 1rem;
-  }
-
-  .stat-value {
-    font-size: 1.5rem;
-  }
-
-  .risk-tracker-section,
-  .category-scores-section,
-  .highlights-section,
-  .actions-section {
-    padding: 1rem 1.5rem;
-  }
-
-  .category-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .full-analysis-section {
-    padding: 1.5rem;
   }
 }
 

@@ -23,7 +23,7 @@ const OrganizationSuggestions = ({ suggestions, country }) => {
   return (
     <div className="organization-suggestions">
       <div className="suggestions-header">
-        <h2>🤝 Recommended Organizations for {country}</h2>
+        <h2>Recommended Organizations for {country}</h2>
         <p className="suggestions-description">
           Based on web research and analysis, these organizations are actively working in {country} 
           and well-positioned to create meaningful impact.
@@ -97,7 +97,7 @@ const OrganizationSuggestions = ({ suggestions, country }) => {
                   rel="noopener noreferrer"
                   className="org-button org-website-btn"
                 >
-                  🌐 Visit Website
+                  Visit Website
                 </a>
               )}
               {org.how_to_support && (
@@ -107,7 +107,7 @@ const OrganizationSuggestions = ({ suggestions, country }) => {
                   rel="noopener noreferrer"
                   className="org-button org-donate-btn"
                 >
-                  💝 Support Them
+                  Support This Organization
                 </a>
               )}
             </div>
