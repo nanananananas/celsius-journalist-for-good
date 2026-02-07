@@ -1,1 +1,0 @@
-# celsius-journalist-for-good
